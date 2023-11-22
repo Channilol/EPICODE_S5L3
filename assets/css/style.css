@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 2vh 5vw 0 5vw;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #732104;
+}
+
+a, p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #732104;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    background-color: #fef7e2;
+    border-radius: 75px;
+    padding: 1vh 5vw 2vh 5vw;
+}
+
+.buttonShop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vh 13vw;
+    background-color: #ffdf7f;
+    border-radius: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.buttonShop:hover {
+    background-color: #ffd968;
+}
+
+.buttonShop img {
+    width: auto;
+    height: 5vh;
+    margin: 0 4vw 0 0;
+}
+
+.buttonShop p {
+    font-size: 2em;
+    margin: 0;
+    font-weight: 600;
+}
+
+.navButtons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.navButtons > div {
+    flex-basis: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2vh 0;
+    background-color: #ffdf7f;
+    height: 7vh;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.navButtons .buttonShop {
+    flex-basis: 60%;
+}
+
+.navButtons > div:hover {
+    background-color: #ffd65a;
+}
+
+/* MAIN */
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+    margin: 5vh 0;
+    line-height: 1;
+}
+
+/* Product Card */
+
+.productCard {
+    background-color: #fef7e2;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 4vh 0;
+    transition: background-color 0.3s ease;
+}
+
+.productCard:hover {
+    background-color: #ffefbe;
+}
+
+.productCard img {
+    width: 100%;
+}
+
+.testoCard {
+    margin: 2vh 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.descrizioneCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descrizioneCard p {
+    text-align: center;
+}
+
+.descrizioneCard p:first-of-type {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.priceCard p {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.buttonCard {
+    text-align: center;
+    margin: 2vh 0;
+}
+
+.buttonCard button {
+    width: 50vw;
+    height: 6vh;
+    background-color: #ffdf7f;
+    color: #732104;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.buttonCard button:hover {
+    background-color: #ffd149;
+}
+
+/* ASIDE */
+
+h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 2em;
+    margin: 6vh 0 1.5vh 0;
+}
+
+.articleContainer {
+    background-color: #fef7e2;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 7vw;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 1.4em;
+    margin: 3.5vh 0 2vh 0;
+}
+
+.testoArticle {
+    display: flex;
+    flex-direction: column;
+}
+
+.testoArticle p {
+    font-size: 1.2em;
+    margin: 0 0 1vh 0;
+}
+
+.imgArticle img {
+    width: 100%;
+    margin: 3vh 0;
+}
+
+/* Media querys */
+
+/* Tablet */
+
+@media screen and (min-width: 576px) {
+    body {
+        margin: 0;
+    }
+
+    main, aside {
+        margin: 2vh 3vw 0 3vw;
+    }
+
+    header {
+        padding: 1vh 2vw;
+        border-radius: 0;
+    }
+
+    .navButtons {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .buttonShop {
+        order: 1;
+    }
+
+    .navButtons div:nth-child(4) {
+        order: 2;
+    }
+    
+    .navButtons div:nth-child(5) {
+        order: 2;
+    }
+
+    .navButtons > div {
+        margin: 0 0.5vw;
+        font-size: 1rem;
+    }
+
+    .buttonShop {
+        padding: 3vh 2vw;
+        background-color: #ffdf7f;
+        border-radius: 100px;
+        transition: background-color 0.3s ease;
+    }
+
+    .buttonShop img {
+        margin: 0 3vw 0 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-align: left;
+    }
+
+    .productCardsContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .productCard {
+        flex-basis: 48%;
+    }
+
+    .buttonCard button {
+        width: 65%;
+    }
+
+    h2 {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .articleContainer {
+        padding: 0 4vw;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        display: flex;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 24%;
+        padding: 1vh 2vw 20vh 2vw;
+    }
+
+    main, aside {
+        margin: 2vh 1vw 0 3vw;
+    }
+
+    #bodyFlexMain {
+        margin: 0 0 0 26%;
+    }
+
+    .navButtons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        margin: 2vh 0 0.5vh 0;
+        padding: 0 2vw;
+    }
+
+    .buttonShop {
+        order: 0;
+    }
+
+    .buttonShop img {
+        margin: 0px 1vw 0px 0px;
+    }
+
+    .navButtons div:nth-child(4) {
+        order: 0;
+    }
+    
+    .navButtons div:nth-child(5) {
+        order: 0;
+    }
+
+    .navButtons > div {
+        margin: 2vh 0.5vw;
+        font-size: 1.1rem;
+        width: 80%;
+        padding: 5vh 4vw;
+        border-radius: 200px;
+    }
+
+    .buttonShop p {
+        font-size: 1.8em;
+    }
+
+    .navButtons .buttonShop {
+        font-size: 1.1rem;
+        border-radius: 200px;
+    }
+
+    .productCardsContainer {
+        justify-content: left;
+    }
+
+    .productCard {
+        flex-basis: 32.4%;
+        margin: 1vh 0.3vw;
+    }
+
+    .productCard .descrizioneCard p:first-of-type {
+        font-size: 1em;
+    }
+
+    .productCard .priceCard p:first-of-type {
+        font-size: 1em;
+    }
+
+    .buttonCard {
+        margin: 1vh 0;
+    }
+
+    .buttonCard button {
+        font-size: 0.9em;
+        height: 4.5vh;
+    }
+
+    .descrizioneCard, .priceCard {
+        margin: 0 0.2vw;
+    }
+
+    .descrizioneCard p {
+        font-size: 0.7em;
+        padding: 0 0.5vw;
+    }
+
+    .testoCard {
+        margin: 0.5vh 0;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    header {
+        width: 19%;
+    }
+
+    .navButtons > div {
+        font-size: 1rem;
+        padding: 4vh 3vw;
+    }
+
+    #bodyFlexMain {
+        margin: 0 0 0 21%;
+    }
+
+    .productCard {
+        flex-basis: 23.6%;
+        margin: 0 0.5vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        width: 12%;
+    }
+
+    .navButtons > div {
+        font-size: 0.8rem;
+        padding: 3vh 3vw;
+    }
+
+    .buttonShop p {
+        font-size: 1.3em;
+    }
+
+    #bodyFlexMain {
+        margin: 0 0 0 14%;
+    }
+
+    .productCard {
+        flex-basis: 18.7%;
+        margin: 0 0.5vw;
+    }
+
+    .articleContainer {
+        display: flex;
+        padding: 0 2vw;
+    }
+
+    .articleContainer > div {
+        width: 50%;
+    }
+
+    .testoArticle {
+        margin: 0 0 0 2vw;
+        order: 1;
+    }
+
+    .testoArticle p {
+        font-size: 0.9em;
+    }
+}
