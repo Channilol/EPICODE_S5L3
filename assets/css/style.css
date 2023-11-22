@@ -273,6 +273,30 @@ h3 {
     }
 }
 
+#stickyToTop {
+    display: fixed;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.tornaTop {
+    background-color: #ffdf7f;
+    border-radius: 10px;
+    width: 45px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.tornaTop a svg {
+    fill: #732104;
+}
+
+.tornaTop:hover {
+    opacity: 1;
+}
+
 @media screen and (min-width: 769px) {
     body {
         display: flex;
@@ -394,6 +418,10 @@ h3 {
         flex-basis: 23.6%;
         margin: 0 0.5vw;
     }
+
+    .articleContainer {
+        padding: 0 3vw;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -434,6 +462,6 @@ h3 {
     }
 
     .testoArticle p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
